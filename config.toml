@@ -1,0 +1,71 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Dust N' Bones"
+theme = "hugo-ficurinia"
+defaultContentLanguage = "en"
+
+[params]
+    author = "Skelly"
+
+    fontFamily = "JetBrains Mono"
+    titleFontFamily = "JetBrains Mono"
+    monospaceFontFamily = "JetBrains Mono" 
+    
+    enableSearch = true
+    searchbarEverywhere = true
+    searchMenuLink = false
+    
+    tagsInArticlePreview = true
+    showRss = false
+    underlineTitleLinks = true
+
+    logo = "/logo.svg"
+    favicon = "/favicon.png"
+    faviconIco = "/favicon.ico"
+    appletouch = "/apple-touch-icon.png"
+    svgicon = "/logo.svg"
+    icon512 = "/android-chrome-512x512.png"
+
+
+[menu]
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 50
+    [[menu.main]]
+        identifier = "write-ups"
+        name = "Write-ups"
+        url = "/writeups/"
+        weight = 20
+    [[menu.main]]
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects/"
+        weight = 30
+
+    # these links (menu.icons) will be added as icon links below the main nav
+    [[menu.icons]]
+        identifier = "github"
+        name = "GitHub"
+        url = "https://github.com/lil-skelly"
+        weight = 10
+
+[markup]
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = true
+        lineNos = true
+        tabWidth = 4
+        style = "dracula"
+    [markup.tableOfContents]
+        endLevel = 5
+        ordered = false
+        startLevel = 1
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    platform = "platforms"
+    difficulty = "difficulty"
+    
